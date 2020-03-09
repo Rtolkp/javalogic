@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Swap two Numbers - JavaScript </h2>
+</body>
+<script>
+
+console.log("First Method");
+let a = 1, b = 2;
+a = a ^ b;
+b = a ^ b;
+a = a ^ b;
+    
+console.log('a is now:', a);
+console.log('b is now:', b);
+
+
+console.log("Second Method");
+let c = 2, d = 6;
+c = d + (d=c, 0)
+console.log(c);
+console.log(d);
+/** It works in two steps:
+
+(b=a, 0) sets b to the old value of a and yields 0
+a = b + 0 sets a to the old value of b
+*/
+console.log("Third Method");
+var h = 1,
+    j = 2;
+
+[h,j ] = [j,h];
+
+console.log('h:', h, 'j:', j); // a: 2 b: 1
+
+
+console.log("Fourth Method");
+var t = 10 ;
+var u = 20;
+ t  = t+u;
+ u = t-u;
+ t = t-u;
+ console.log(t);
+ console.log(u);
+	
+
+</script>
+</html>
