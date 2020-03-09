@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Print Array Elements </title>
+</head>
+<body>
+	
+</body>
+<script>
+var scripts = new Array();
+scripts[0] = "PHP";
+scripts[1] = "ASP";
+scripts[2] = "JavaScript";
+scripts[3] = "HTML";
+
+//Print All Array Elements
+for (i=0;i<scripts.length;i++)
+{
+document.write(scripts[i] + "<br >");
+}
+
+//Displaying Single Element
+document.write(scripts[2]);
+
+//Returning Last element of the Array
+document.write(scripts[scripts.length-1]);
+
+//Returning all elements with Key
+for (var key in scripts) {
+  document.write("key : " + key + "  =>value: " + scripts[key] + "<br>");
+}
+
+</script>
+</html>

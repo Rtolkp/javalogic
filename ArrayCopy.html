@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title> Copy one Array Elements into Another </title>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		console.log("Logic -01");
+		var a = [1, 2, 3];
+		var b = a;
+		console.log(b.push(4));
+		console.log(b); // [1, 2, 3, 4]
+
+		console.log("Logic-02");
+		var a = [1, 2, 3];
+		var b = new Array(a.length);
+		for (var i = 0; i < a.length; i++) {
+  				b[i] = a[i];
+		}
+		console.log(b);
+
+		console.log("Logic-03");
+		var c = [1, 2, 3];
+		var d = a.slice(0, a.length);
+		console.log(b);
+
+		
+
+	</script>
+</html>

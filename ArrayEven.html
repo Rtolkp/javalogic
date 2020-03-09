@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Print Array Even & Odd Position Elements </title>
+</head>
+<body>
+	
+</body>
+<script>
+
+
+//Print Array Elements at Even Position
+function question0(array){
+  let arr = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i] % 2 === 0){
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+console.log(question0([ 5, 20, 11, 42, 2, 19 ]));
+
+
+//Print Array Elements at Odd Position
+function quest(array){
+  let arr = [];
+  for (let i = 0; i < array.length; i++){
+    if (array[i] % 2 !== 0){
+      arr.push(array[i]);
+    }
+  }
+  return arr;
+}
+console.log(quest([ 5, 20, 11, 42, 2, 19 ]));
+
+</script>
+</html>

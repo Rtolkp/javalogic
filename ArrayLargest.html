@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Print Array Largest  Elements </title>
+</head>
+<body>
+	
+</body>
+<script>
+
+//Program to Largest Element in Array
+function largest(arr) {
+	var large = arr[0];
+	for(var i=1; i<arr.length; i++) {
+		if(large < arr[i]) {
+			large = arr[i];
+		}
+	}
+	return large;
+}
+
+var input = [10, 30, 85, 43, 70];
+var output = largest(input);
+
+console.log(output); //85
+
+
+
+
+
+</script>
+</html>
